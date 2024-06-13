@@ -3,19 +3,19 @@
         <div class="card p-3 " >
             <img [src]="data.image" class="card-img-top" [alt]="data.name">
             <h5 class="text-center mt-2 mb-0 pb-0"> {{data.name}} </h5>
-            <div class="card-body ">
+            <div class="card-body " dir="rtl">
                 <hr class="m-0 p-0">
-                <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> A discount  {{data.rental_discount}}% </p>
-                <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> It gives you {{data.allowed_Kilos}} Km Extra  </p>
-                <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> It allow {{data.extra_hours}} Hours Extra  </p>
-                <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> a discount {{data.delivery_discount_regions}}% when delevired between different places </p>
-                <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> 1000 SAR Payed equal 100 point from Abu Diyab  </p>
-                <!-- if you want it arabic because api don't repack translate -->
-                <!-- <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> خصم تأجير  {{data.rental_discount}}% </p>
+                <!-- <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> A discount  {{data.rental_discount}}% </p>
                 <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> It gives you {{data.allowed_Kilos}} Km Extra  </p>
                 <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> It allow {{data.extra_hours}} Hours Extra  </p>
                 <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> a discount {{data.delivery_discount_regions}}% when delevired between different places </p>
                 <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> 1000 SAR Payed equal 100 point from Abu Diyab  </p> -->
+                <!-- if you want it arabic because api don't repack translate -->
+                <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> خصم تأجير  %{{data.rental_discount}} </p>
+                <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> السماح ب {{data.allowed_Kilos}} كيلو اضافبه  </p>
+                <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> السماح {{data.extra_hours}} ساعات اضافيه  </p>
+                <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> خصم  {{data.delivery_discount_regions}}% عند التسليم بين المناطق المختلفه </p>
+                <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> 1000 ريال مدفوع يساوي 100 نقطه من أبو ذياب </p>
             </div>
         </div>
     </div>
