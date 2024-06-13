@@ -1,0 +1,22 @@
+<div class="row g-3">
+    <div class="col-xl-3 col-lg-4 col-md-6 bgColor" *ngFor="let data of allData">
+        <div class="card p-3 " >
+            <img [src]="data.image" class="card-img-top" [alt]="data.name">
+            <h5 class="text-center mt-2 mb-0 pb-0"> {{data.name}} </h5>
+            <div class="card-body ">
+                <hr class="m-0 p-0">
+                <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> A discount  {{data.rental_discount}}% </p>
+                <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> It gives you {{data.allowed_Kilos}} Km Extra  </p>
+                <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> It allow {{data.extra_hours}} Hours Extra  </p>
+                <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> a discount {{data.delivery_discount_regions}}% when delevired between different places </p>
+                <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> 1000 SAR Payed equal 100 point from Abu Diyab  </p>
+                <!-- if you want it arabic because api don't repack translate -->
+                <!-- <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> خصم تأجير  {{data.rental_discount}}% </p>
+                <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> It gives you {{data.allowed_Kilos}} Km Extra  </p>
+                <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> It allow {{data.extra_hours}} Hours Extra  </p>
+                <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> a discount {{data.delivery_discount_regions}}% when delevired between different places </p>
+                <p><span><i class="fa-regular fa-circle-check text-success"></i> </span> 1000 SAR Payed equal 100 point from Abu Diyab  </p> -->
+            </div>
+        </div>
+    </div>
+</div>
